@@ -1,0 +1,30 @@
+body 
+{
+    background: url('phone.png');
+    background-repeat: no-repeat;
+    background-position: 15 0 ;
+    background-size: 300px;
+}
+
+#contenuto
+{
+    position: absolute;
+    top: 90px;
+    left: 35px;
+    height: 453px;
+    width: 257px;
+    background-color: snow;
+    overflow: auto;
+    
+}
+
+table, th, td
+{
+     border: 1px solid black;
+}
+
+th
+{
+     height: 30px;
+    background-color:crimson;
+}

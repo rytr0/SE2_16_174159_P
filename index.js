@@ -7,13 +7,16 @@ var bodyParser = require('body-parser');
 
 app.listen(1337, "127.0.0.1");
 app.use(express.static(__dirname + '/Scripts'));
-app.use(bodyParser.urlencoded({ extended: false }));
 
 
 app.use('/', function(req, res)
     {
         bind.toFile('index.tpl', 
         {
+            Titolo:"Hot",
+            notizia1:"qualcosas s skjaldjn",
+            notizia2:"qualcosas s skjaldjn",
+            notizia3:"qualcosas s skjaldjn"
         }, 
         function(data) 
         {
@@ -21,6 +24,4 @@ app.use('/', function(req, res)
             res.end(data);
         });  
 });
-dSDS
-
 
