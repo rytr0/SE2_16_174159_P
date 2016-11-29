@@ -11,13 +11,20 @@ app.use(express.static(__dirname + '/Scripts'));
 
 app.use('/', function(req, res)
     {    
+        var notizie = back.StampaNotiziHot();
+    
         bind.toFile('index.tpl', 
         {
-            Sezione:"Hot",
-            titolo1:"aato",
-            notizia1:"beeet",
-            notizia2:"qualcosas s skjaldjn",
-            notizia3:"qualcosas s skjaldjn"
+            Sezione: "Hot",
+            titolo1:notizie[0].titolo,
+            notizia1:notizie[0].testo,
+            titolo2:notizie[1].titolo,
+            notizia2:notizie[1].testo,
+            titolo3:notizie[2].titolo,
+            notizia3:notizie[2].testo,
+            Sezione2: "Notizi Città",
+            Sezione3: "Notizie Università"
+            
         }, 
         function(data) 
         {

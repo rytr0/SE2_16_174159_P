@@ -12,10 +12,20 @@ body
     position: absolute;
     top: 90px;
     left: 35px;
-    height: 453px;
+    height: 353px;
     width: 257px;
     background-color: snow;
     overflow: auto;
+}
+
+
+#CambioSezione
+{
+    position: absolute;
+    top: 443px;
+    left: 35px;
+    height: 60px;
+    width: 257px;
 }
 
 
@@ -34,7 +44,16 @@ table
 }
 
 
-#Notizieid 
+td
 {
     border-bottom: 1pt solid black;
+}
+
+
+input
+{
+    height: 30px;
+    width: 257px;
+    background-color:crimson;
+    border: 1px solid black;
 }
