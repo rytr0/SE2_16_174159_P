@@ -6,6 +6,7 @@ body
     background-size: 300px;
 }
 
+
 #contenuto
 {
     position: absolute;
@@ -15,16 +16,25 @@ body
     width: 257px;
     background-color: snow;
     overflow: auto;
-    
 }
 
-table, th, td
+
+table
 {
-     border: 1px solid black;
+    width: 100%;
+    height: 100%;
 }
 
-th
+
+#Sezioneid
 {
-     height: 30px;
+    height: 30px;
     background-color:crimson;
+    border: 1px solid black;
+}
+
+
+#Notizieid 
+{
+    border-bottom: 1pt solid black;
 }

@@ -1,7 +1,7 @@
 var express = require("express");           
 var app = express();                        
 var bind = require("bind");
-//var back = require("./script.js");
+var back = require("./back.js");
 var bodyParser = require('body-parser');
 
 
@@ -10,11 +10,12 @@ app.use(express.static(__dirname + '/Scripts'));
 
 
 app.use('/', function(req, res)
-    {
+    {    
         bind.toFile('index.tpl', 
         {
-            Titolo:"Hot",
-            notizia1:"qualcosas s skjaldjn",
+            Sezione:"Hot",
+            titolo1:"aato",
+            notizia1:"beeet",
             notizia2:"qualcosas s skjaldjn",
             notizia3:"qualcosas s skjaldjn"
         }, 
