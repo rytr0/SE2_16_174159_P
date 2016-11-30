@@ -1,24 +1,24 @@
 {
-    "name": "Progetto",
-    "version": "1.0.0",
-    "description": "Sviluppo propria idea",
-    "main": "index.js",
-    "start":"node index.js",
-    "scripts": 
-    {
-        "test": "echo \"Error: no test specified\" && exit 1"
-    },
-    "repository": 
-    {
-        "type": "git",
-        "url": "git+https://github.com/armaniv/SE2_16_174159_P.git"
-    },
-    "keywords": [],
-    "author": "Valentino",
-    "license": "ISC",
-    "bugs": 
-    {
-        "url": "https://github.com/armaniv/SE2_16_174159_P/issues"
-    },
-    "homepage": "https://github.com/armaniv/SE2_16_174159_P#readme"    
+  "name": "Progetto",
+  "version": "1.0.0",
+  "description": "Sviluppo propria idea",
+  "main": "index.js",
+  "start": "node index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/armaniv/SE2_16_174159_P.git"
+  },
+  "keywords": [],
+  "author": "Valentino",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/armaniv/SE2_16_174159_P/issues"
+  },
+  "homepage": "https://github.com/armaniv/SE2_16_174159_P#readme",
+  "dependencies": {
+    "start": "^4.0.2"
+  }
 }

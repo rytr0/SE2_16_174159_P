@@ -50,10 +50,48 @@ td
 }
 
 
-input
+#CambioSezione input
 {
     height: 30px;
     width: 257px;
     background-color:crimson;
     border: 1px solid black;
 }
+
+#BottoniBassi
+{
+    position: absolute;
+    top: 504px;
+    left: 35px;
+    height: 38px;
+    width: 257px;
+    overflow: auto;
+}
+
+#BottoniBassi button
+{
+    height: 38px;
+    background-color: azure;
+}
+
+#BottoniBassi a
+{
+    text-decoration: none;
+    color: black;
+}
+
+#btnCitta
+{
+    width: 56px;
+}
+
+#btnMappa
+{
+    width: 56px;
+}
+
+#btnEve
+{
+    width: 56px;
+}
+
