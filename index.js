@@ -5,7 +5,7 @@ var back = require("./back.js");
 var bodyParser = require('body-parser');
 
 //imposto parametri del server
-app.listen(1337, "127.0.0.1");
+app.listen(process.env.PORT || 5000);
 app.use(express.static(__dirname + '/Scripts'));
 app.use(bodyParser.urlencoded({ extended: false }));
 
