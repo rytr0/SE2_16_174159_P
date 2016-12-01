@@ -22,6 +22,7 @@
   "dependencies": {
     "bind": "^0.1.7",
     "body-parser": "^1.15.2",
-    "express": "^4.14.0"
+    "express": "^4.14.0",
+    "jshint": "^2.9.4"
   }
 }
