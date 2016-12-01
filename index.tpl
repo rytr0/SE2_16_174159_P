@@ -53,7 +53,7 @@
     <!-- I bottnoi che permetono di cambiare sezione dell'app--> 
     <div id="BottoniBassi">
         <button id="btnCitta"><a href="index.tpl">Città</a></button>
-        <button id="btnUni"><a href="#">Università</a>/button>
+        <button id="btnUni"><a href="#">Università</a></button>
         <button id="btnMappa"><a href="#">Mappa</a></button>
         <button id="btnEve"><a href="#">Eventi</a></button>
     </div>

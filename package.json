@@ -18,5 +18,10 @@
   "bugs": {
     "url": "https://github.com/armaniv/SE2_16_174159_P/issues"
   },
-  "homepage": "https://github.com/armaniv/SE2_16_174159_P#readme"
+  "homepage": "https://github.com/armaniv/SE2_16_174159_P#readme",
+  "dependencies": {
+    "bind": "^0.1.7",
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0"
+  }
 }
