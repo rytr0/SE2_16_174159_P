@@ -37,6 +37,8 @@
         </table>
     </div>
       
+      
+    <!-- I pulsanti che permetono di cambiare sezione delle notizie-->  
     <div id="CambioSezione">
                 
         <form  id="visualizza" action="/CaricaSezione" method="post">
@@ -47,6 +49,8 @@
     
     </div>
 
+
+    <!-- I bottnoi che permetono di cambiare sezione dell'app--> 
     <div id="BottoniBassi">
         <button id="btnCitta"><a href="index.tpl">Città</a></button>
         <button id="btnUni"><a href="#">Università</a>/button>

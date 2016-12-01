@@ -4,14 +4,15 @@ var bind = require("bind");
 var back = require("./back.js");
 var bodyParser = require('body-parser');
 
-
+//imposto parametri del server
 app.listen(1337, "127.0.0.1");
 app.use(express.static(__dirname + '/Scripts'));
 app.use(bodyParser.urlencoded({ extended: false }));
 
-
+//evento generato in risposta all'evento post del form "visualizza"
 app.post('/CaricaSezione', function(req, res)
     {
+        //se ho premuto sulla sezione Notizia Città, indifferemente dalla prima o seconda sezione cliccabile
         if (req.body.Sez2=="Notizie Città" || req.body.Sez3=="Notizie Città")
         {
             
@@ -36,6 +37,8 @@ app.post('/CaricaSezione', function(req, res)
             });
         }
         
+    
+        //se ho premuto sulla sezione Notizia Università, indifferemente dalla prima o seconda sezione cliccabile
         else if (req.body.Sez2=="Notizie Università" || req.body.Sez3=="Notizie Università")
         {
             
@@ -59,6 +62,7 @@ app.post('/CaricaSezione', function(req, res)
                 res.end(data);
             });
         }
+        //Se ho cliccato la prima o la seconda sezione e non sono nei casi precedenti significa che voglio tornare alle sezione "Hot"
         else
         {
             var notizie = back.StampaNotizie("Hot");
@@ -86,7 +90,7 @@ app.post('/CaricaSezione', function(req, res)
     });
            
 
-
+//in una prima fase, setta i valori
 app.use('/', function(req, res)
     {    
         var notizie = back.StampaNotizie("Hot");
