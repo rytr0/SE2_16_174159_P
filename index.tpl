@@ -3,9 +3,6 @@
   <head>
     <title>Progetto Vale</title>
     <link href="vista.css" rel="stylesheet" type="text/css">
-      
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-      
   </head>
     
   <body>
@@ -43,16 +40,16 @@
     <div id="CambioSezione">
                 
         <form  id="visualizza" action="/CaricaSezione" method="post">
-            <input type="submit" name="Sez2" value="(:Sezione2:)"></th>
+            <input type="submit" id="Sez2" name="Sez2" value="(:Sezione2:)"></th>
             <br>
-            <input type="submit" name="Sez3" value="(:Sezione3:)"></th>
+            <input type="submit" id="Sez3" name="Sez3" value="(:Sezione3:)"></th>
         </form>
     
     </div>
 
     <div id="BottoniBassi">
         <button id="btnCitta"><a href="index.tpl">Città</a></button>
-        <button id="btnUni"><a href="#">Università</a></button>
+        <button id="btnUni">Università</button>
         <button id="btnMappa"><a href="#">Mappa</a></button>
         <button id="btnEve"><a href="#">Eventi</a></button>
     </div>

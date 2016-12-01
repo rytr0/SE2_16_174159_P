@@ -17,8 +17,5 @@
   "bugs": {
     "url": "https://github.com/armaniv/SE2_16_174159_P/issues"
   },
-  "homepage": "https://github.com/armaniv/SE2_16_174159_P#readme",
-  "dependencies": {
-    "start": "^4.0.2"
-  }
+  "homepage": "https://github.com/armaniv/SE2_16_174159_P#readme"
 }
