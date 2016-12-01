@@ -1,5 +1,8 @@
+//lista che conterrà le notizie
 var notizie =[];
 
+
+//inserimento di alcune notizi
 notizie.push(new Notizia(1, "Hot", "Trento premiata città verde", "Grazie al parco di Melta, alla riqualificazione dell'ex area Michelin ed al giardino delle materne Rodari."));
 
 notizie.push(new Notizia(2, "Hot", "Trento SmartCity", "Grazie all'amministrazione digitale oggi è possibile consultare un referto medico online, oppure pagare il bollo con lo smartphone."));
@@ -20,6 +23,15 @@ notizie.push(new Notizia(9, "Notizie Università", "Convegno di Fisica", "L'univ
 
 notizie.push(new Notizia(10, "Notizie Università", "Convegno di Filosofia", "L'università presenta una lezione con argomento il pensiero di Platone. Sarà presentata del dottor Marco e sarà aperta al pubblico"));
 
+
+/**
+ * @crea una nuova notizia.
+ * @param [in] int id, l'id della notizia
+ * @param [in] string tipo, il tipo della notizia. Può essere: "Hot", "Notizie città" o "Notizie Università"
+ * @param [in] string titolo, il titlo della notizia.
+ * @param [in] string testo, il testo della notizia.
+**/
+
 function Notizia(id, tipo, titolo, testo)
 {
     this.id= id;
@@ -29,7 +41,11 @@ function Notizia(id, tipo, titolo, testo)
 }
 
 
-
+/**
+ * @restituisce le notizie di una certa categoria.
+ * @param [in] string tiposcelto, il tipo della notizia. Può essere: "Hot", "Notizie città" o "Notizie Università"
+ * @return lista di notizie del tipo prescelto.
+ */
 function StampaNotizie(tiposcelto)
 {
     //imopstiamo il limite a 3, appunto per scopi puramente di sviluppo di questa versione web, nell'app definitiva NON ci dovrà essere
@@ -43,6 +59,15 @@ function StampaNotizie(tiposcelto)
         {
             temp.push(notizie[i]);
             conta++;
+        }
+    }
+    
+    //se il tipo è sbagliato restituisco delle notizie scelte casualmente tra le notizie disponibili
+    if(conta==0)
+    {
+        for(var i=0; i<limite;i++)
+        {
+            temp.push(notizie[Math.floor((Math.random() * notizie.length))]); 
         }
     }
     
