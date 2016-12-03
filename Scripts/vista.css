@@ -58,6 +58,7 @@ td
     border: 1px solid black;
 }
 
+
 #BottoniBassi
 {
     position: absolute;
@@ -68,11 +69,13 @@ td
     overflow: auto;
 }
 
+
 #BottoniBassi button
 {
     height: 38px;
     background-color: azure;
 }
+
 
 #BottoniBassi a
 {
@@ -80,15 +83,18 @@ td
     color: black;
 }
 
+
 #btnCitta
 {
     width: 56px;
 }
 
+
 #btnMappa
 {
     width: 56px;
 }
+
 
 #btnEve
 {
