@@ -3,6 +3,7 @@
   <head>
     <title>Progetto Vale</title>
     <link href="vista.css" rel="stylesheet" type="text/css">
+      
   </head>
     
   <body>

@@ -1,0 +1,41 @@
+swagger: '2.0'
+info:
+  title: Progetto Valentino Armani
+  description: Definition of api
+  version: "1.0.0"
+# the domain of the service
+host: 127.0.0.1:5000
+# array of all schemes that your API supports
+schemes:
+  - https
+# will be prefixed to all paths
+basePath: /
+produces:
+  - application/json
+  - text
+consumes:
+  - application/json
+# the APIs
+paths:
+  /:
+    get:
+      summary: Carica i contenuti principali
+      description: Carica le notizie riguardati la sezione "Hot" delle notizie
+      responses:
+        200:
+          description: Caricamento delle notizie hot
+
+  /CaricaSezione:
+    post:
+      summary: Carica i contenuti della sezione
+      description: Carica le notizie riguardati la sezione selezionata
+      parameters:
+        - name: Sezione
+          in: formData
+          description: La sezione che è stata premuta tramite i bottoni "Sez2" o "Sez3"
+          required: true
+          type: string
+          
+      responses:
+        200:
+          description: Caricamento delle notizie tra le diverse categorie possibili "Hot" "Notizie Città" e "Notizie Università"
