@@ -2,7 +2,7 @@
 var notizie =[];
 
 
-//inserimento di alcune notizi
+//inserimento di alcune notizie 
 notizie.push(new Notizia(1, "Hot", "Trento premiata città verde", "Grazie al parco di Melta, alla riqualificazione dell'ex area Michelin ed al giardino delle materne Rodari."));
 
 notizie.push(new Notizia(2, "Hot", "Trento SmartCity", "Grazie all'amministrazione digitale oggi è possibile consultare un referto medico online, oppure pagare il bollo con lo smartphone."));
@@ -31,7 +31,6 @@ notizie.push(new Notizia(10, "Notizie Università", "Convegno di Filosofia", "L'
  * @param [in] string titolo, il titlo della notizia.
  * @param [in] string testo, il testo della notizia.
 **/
-
 function Notizia(id, tipo, titolo, testo)
 {
     this.id= id;
@@ -44,7 +43,7 @@ function Notizia(id, tipo, titolo, testo)
 /**
  * @restituisce le notizie di una certa categoria.
  * @param [in] string tiposcelto, il tipo della notizia. Può essere: "Hot", "Notizie città" o "Notizie Università"
- * @return lista di notizie del tipo prescelto.
+ * @return temp [], lista di notizie del tipo prescelto.
  */
 function StampaNotizie(tiposcelto)
 {
