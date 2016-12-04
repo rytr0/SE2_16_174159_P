@@ -9,6 +9,9 @@ app.listen(process.env.PORT || 5000);
 app.use(express.static(__dirname + '/Scripts'));
 app.use(bodyParser.urlencoded({ extended: false }));
 
+
+
+
 //evento generato in risposta all'evento post del form "visualizza"
 app.post('/CaricaSezione', function(req, res)
     {

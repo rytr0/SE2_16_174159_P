@@ -3,9 +3,8 @@
   "version": "1.0.0",
   "description": "Sviluppo propria idea",
   "main": "index.js",
-  "start": "node index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "./node_modules/.bin/jasmine-node Documents/",
     "start": "node index.js"
   },
   "repository": {
@@ -23,6 +22,7 @@
     "bind": "^0.1.7",
     "body-parser": "^1.15.2",
     "express": "^4.14.0",
+    "jasmine-node": "^1.14.5",
     "jshint": "^2.9.4"
   }
 }
