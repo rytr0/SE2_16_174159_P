@@ -11,10 +11,9 @@ schemes:
 # will be prefixed to all paths
 basePath: /
 produces:
-  - application/json
   - text
 consumes:
-  - application/json
+  - text
 # the APIs
 paths:
   /:
